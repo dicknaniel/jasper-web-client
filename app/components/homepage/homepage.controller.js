@@ -2,7 +2,7 @@
     'use strict';
     app.controller('homepageCntl', ['$scope', '$firebaseAuth', '$firebaseObject', function($scope, $firebaseAuth, $firebaseArray) {
         var config = {
-            apiKey: "AIzaSyC1ylt4mX7OC2qeixQpBrt7dvEp7D18Vps",
+            apiKey: "AIzaSyCjzaWHNmPZkTJX3--g8Kes36KBpHkx2lI",
             authDomain: "project1-55aa7.firebaseapp.com",
             databaseURL: "https://project1-55aa7.firebaseio.com"
         };
@@ -23,7 +23,7 @@
 
         function init() {
             $scope.featured = 'bank';
-            firebase.database().ref('purchases').once('value').then(function(snapshot) {
+            firebase.database().ref('accounts').once('value').then(function(snapshot) {
                 $scope.purchases = snapshot.val();
                 console.log($scope.purchases);
             });
