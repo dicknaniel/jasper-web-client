@@ -1,0 +1,74 @@
+
+ <div class="container">
+ 	<div ng-if="featured == 'bank'" >
+	 	<div id='fade_container'>
+			<div id='contents'><img src='img/bank.jpeg'></div>
+			<div id="gradient"></div>
+	 	</div>
+	 	<div width="70%" float:'right'>
+	 		<h3 id="title">Checking/Savings</h3>
+	 		<table>
+	 			<tr>
+		 			<td><b>Account Owner:</b></td>
+		 			<td>Me</td>
+		 		</tr>
+		 		<tr>
+		 			<td><b>Account Number:</b></td>
+		 			<td>12345</td>
+		 		</tr>
+		 		<tr>
+		 			<td><b>Account Balance:</b></td>
+		 			<td>$1,000,000</td>
+		 		</tr>
+	 		</table>
+	 	</div>
+	</div>
+	<div ng-if="featured == 'credit'" >
+	 	<div id='fade_container'>
+			<div id='contents'><img src='img/credit.jpg'></div>
+			<div id="gradient"></div>
+	 	</div>
+	 	<div width="70%" float:'right'>
+	 		<h3 id="title">Credit Card</h3>
+	 		<table>
+	 			<tr>
+		 			<td><b>Account Owner:</b></td>
+		 			<td>Me</td>
+		 		</tr>
+		 		<tr>
+		 			<td><b>Account Number:</b></td>
+		 			<td>12345</td>
+		 		</tr>
+		 		<tr>
+		 			<td><b>Account Balance:</b></td>
+		 			<td>$1</td>
+		 		</tr>
+		 		<tr>
+		 			<td><b>Available Balance:</b></td>
+		 			<td>$1,000,000</td>
+		 		</tr>
+	 		</table>
+	 	</div>
+	</div>
+ 	<div ng-if="featured == 'atm'">
+	 	<div id='fade_container'>
+			<div id='contents'><img src='img/atm.jpg'></div>
+			<div id="gradient"></div>
+	 	</div>
+	 	<div width="70%" float:'right'>
+	 		<h3 id="title">Capital One ATM</h3>
+
+	 	</div>
+	 </div>
+</div>
+<div class="container">
+	<div class="widget" ng-click="featured = 'bank'">
+	   	<img src="img/bank.jpeg">
+	</div>
+	<div class="widget" ng-click="featured = 'credit'">
+	    <img src="img/credit.jpg">
+	</div>
+	<div class="widget" ng-click="featured = 'atm'">
+	    <img src="img/ATM.jpg">
+	</div>
+</div>
